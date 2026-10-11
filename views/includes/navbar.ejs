@@ -1,0 +1,82 @@
+
+<style>
+    .welcome-popup {
+        position: fixed;
+        top: 85px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        color: #198754;
+        padding: 18px 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        z-index: 2000;
+        text-align: center;
+        animation: popup 3s forwards;
+    }
+
+    .welcome-popup h5 {
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .welcome-popup p {
+        margin: 5px 0 0;
+        color: #666;
+    }
+
+    @keyframes popup {
+        0% {
+            opacity: 0;
+            visibility: visible;
+        }
+        15%, 75% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+        color: #198754 !important;
+    }
+
+    .navbar .nav-link:hover {
+        color: #198754;
+    }
+</style>
+
+<div class="welcome-popup">
+    <h5><i class="bi bi-compass"></i> wander_list.com</h5>
+    <p>Welcome to Wander!</p>
+</div>
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav flex-row justify-content-between">
+<i class="bi bi-compass"></i>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/listings">All_List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/listings/new">New_List</a>
+        </li>
+     
+      </ul>
+    </div>
+  </div>
+
+</nav>
